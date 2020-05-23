@@ -8,10 +8,10 @@
 
 import UIKit
 
-final class AppRouter {
-
+final class AppRouter: Router {
     private let window: UIWindow?
     var presentingViewController: UINavigationController
+    var currentViewController: UIViewController?
 
     init(window: UIWindow?,
          presentingViewController: UINavigationController = UINavigationController()) {
@@ -19,7 +19,7 @@ final class AppRouter {
         self.presentingViewController = presentingViewController
     }
 
-    func start() {
+    func start(animated: Bool = false) {
         window?.rootViewController = presentingViewController
         window?.makeKeyAndVisible()
     }
