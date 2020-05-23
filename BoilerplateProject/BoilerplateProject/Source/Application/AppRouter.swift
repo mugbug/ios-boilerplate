@@ -22,5 +22,9 @@ final class AppRouter: Router {
     func start(animated: Bool = false) {
         window?.rootViewController = presentingViewController
         window?.makeKeyAndVisible()
+        let router = TabBarSceneRouter(
+            presentingViewController: presentingViewController
+        )
+        router.start()
     }
 }

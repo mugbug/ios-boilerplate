@@ -18,6 +18,14 @@
 		730C608C2479943900261DF1 /* PushableRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730C608B2479943900261DF1 /* PushableRouter.swift */; };
 		730C608E2479946000261DF1 /* PresentableRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730C608D2479946000261DF1 /* PresentableRouter.swift */; };
 		730C6090247994CA00261DF1 /* RootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730C608F247994CA00261DF1 /* RootRouter.swift */; };
+		730C60992479990000261DF1 /* TabBarSceneRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730C60982479990000261DF1 /* TabBarSceneRouter.swift */; };
+		730C60A224799CF600261DF1 /* TabBarRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730C60A124799CF600261DF1 /* TabBarRouter.swift */; };
+		730C60A424799E9200261DF1 /* TabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730C60A324799E9200261DF1 /* TabBarItem.swift */; };
+		730C60A824799F7F00261DF1 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730C60A724799F7F00261DF1 /* HomeRouter.swift */; };
+		730C60AA24799F8C00261DF1 /* SettingsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730C60A924799F8C00261DF1 /* SettingsRouter.swift */; };
+		730C60AC24799F9400261DF1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730C60AB24799F9400261DF1 /* HomeViewController.swift */; };
+		730C60AE24799F9D00261DF1 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730C60AD24799F9D00261DF1 /* SettingsViewController.swift */; };
+		730C60B02479A07900261DF1 /* TabPageRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730C60AF2479A07900261DF1 /* TabPageRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +54,14 @@
 		730C608B2479943900261DF1 /* PushableRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushableRouter.swift; sourceTree = "<group>"; };
 		730C608D2479946000261DF1 /* PresentableRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentableRouter.swift; sourceTree = "<group>"; };
 		730C608F247994CA00261DF1 /* RootRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootRouter.swift; sourceTree = "<group>"; };
+		730C60982479990000261DF1 /* TabBarSceneRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarSceneRouter.swift; sourceTree = "<group>"; };
+		730C60A124799CF600261DF1 /* TabBarRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarRouter.swift; sourceTree = "<group>"; };
+		730C60A324799E9200261DF1 /* TabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItem.swift; sourceTree = "<group>"; };
+		730C60A724799F7F00261DF1 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		730C60A924799F8C00261DF1 /* SettingsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRouter.swift; sourceTree = "<group>"; };
+		730C60AB24799F9400261DF1 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		730C60AD24799F9D00261DF1 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		730C60AF2479A07900261DF1 /* TabPageRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabPageRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +158,9 @@
 		730C60842479940100261DF1 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				730C60A524799F7100261DF1 /* Home */,
+				730C60A624799F7500261DF1 /* Settings */,
+				730C60952479980200261DF1 /* TabBar */,
 				730C60852479940600261DF1 /* Utils */,
 			);
 			path = Presentation;
@@ -171,8 +190,37 @@
 				730C608B2479943900261DF1 /* PushableRouter.swift */,
 				730C608D2479946000261DF1 /* PresentableRouter.swift */,
 				730C608F247994CA00261DF1 /* RootRouter.swift */,
+				730C60A124799CF600261DF1 /* TabBarRouter.swift */,
+				730C60AF2479A07900261DF1 /* TabPageRouter.swift */,
 			);
 			path = Router;
+			sourceTree = "<group>";
+		};
+		730C60952479980200261DF1 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				730C60982479990000261DF1 /* TabBarSceneRouter.swift */,
+				730C60A324799E9200261DF1 /* TabBarItem.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		730C60A524799F7100261DF1 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				730C60A724799F7F00261DF1 /* HomeRouter.swift */,
+				730C60AB24799F9400261DF1 /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		730C60A624799F7500261DF1 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				730C60A924799F8C00261DF1 /* SettingsRouter.swift */,
+				730C60AD24799F9D00261DF1 /* SettingsViewController.swift */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,14 +345,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				730C60A224799CF600261DF1 /* TabBarRouter.swift in Sources */,
 				730C6090247994CA00261DF1 /* RootRouter.swift in Sources */,
 				730C60882479941100261DF1 /* Router.swift in Sources */,
+				730C60B02479A07900261DF1 /* TabPageRouter.swift in Sources */,
+				730C60AA24799F8C00261DF1 /* SettingsRouter.swift in Sources */,
 				730C606024798BC800261DF1 /* ViewController.swift in Sources */,
+				730C60AC24799F9400261DF1 /* HomeViewController.swift in Sources */,
 				730C608A2479942300261DF1 /* ShowableRouter.swift in Sources */,
+				730C60AE24799F9D00261DF1 /* SettingsViewController.swift in Sources */,
 				730C608E2479946000261DF1 /* PresentableRouter.swift in Sources */,
+				730C60A824799F7F00261DF1 /* HomeRouter.swift in Sources */,
+				730C60A424799E9200261DF1 /* TabBarItem.swift in Sources */,
 				730C605C24798BC800261DF1 /* AppDelegate.swift in Sources */,
 				730C608C2479943900261DF1 /* PushableRouter.swift in Sources */,
 				730C608224798CEE00261DF1 /* AppRouter.swift in Sources */,
+				730C60992479990000261DF1 /* TabBarSceneRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
