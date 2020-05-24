@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		730C605C24798BC800261DF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730C605B24798BC800261DF1 /* AppDelegate.swift */; };
-		730C606024798BC800261DF1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730C605F24798BC800261DF1 /* ViewController.swift */; };
 		730C606524798BCB00261DF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 730C606424798BCB00261DF1 /* Assets.xcassets */; };
 		730C606824798BCB00261DF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 730C606624798BCB00261DF1 /* LaunchScreen.storyboard */; };
 		730C607324798BCB00261DF1 /* BoilerplateProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730C607224798BCB00261DF1 /* BoilerplateProjectTests.swift */; };
@@ -43,7 +42,6 @@
 /* Begin PBXFileReference section */
 		730C605824798BC800261DF1 /* BoilerplateProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoilerplateProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		730C605B24798BC800261DF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		730C605F24798BC800261DF1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		730C606424798BCB00261DF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		730C606724798BCB00261DF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		730C606924798BCB00261DF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -128,7 +126,6 @@
 			children = (
 				730C60842479940100261DF1 /* Presentation */,
 				730C608024798CE300261DF1 /* Application */,
-				730C605F24798BC800261DF1 /* ViewController.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -357,7 +354,6 @@
 				730C60B02479A07900261DF1 /* TabPageRouter.swift in Sources */,
 				730C60AA24799F8C00261DF1 /* SettingsRouter.swift in Sources */,
 				730C60B22479EE8500261DF1 /* HomeView.swift in Sources */,
-				730C606024798BC800261DF1 /* ViewController.swift in Sources */,
 				730C60AC24799F9400261DF1 /* HomeViewController.swift in Sources */,
 				730C608A2479942300261DF1 /* ShowableRouter.swift in Sources */,
 				730C60AE24799F9D00261DF1 /* SettingsViewController.swift in Sources */,
