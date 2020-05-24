@@ -19,6 +19,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
     ) -> Bool {
 
+        #if DEBUG
+        Current = .mock
+        #endif
+
         window = UIWindow(frame: UIScreen.main.bounds)
         appRouter = AppRouter(window: window)
         appRouter?.start()

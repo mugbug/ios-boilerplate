@@ -26,6 +26,8 @@
 		730C60AC24799F9400261DF1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730C60AB24799F9400261DF1 /* HomeViewController.swift */; };
 		730C60AE24799F9D00261DF1 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730C60AD24799F9D00261DF1 /* SettingsViewController.swift */; };
 		730C60B02479A07900261DF1 /* TabPageRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730C60AF2479A07900261DF1 /* TabPageRouter.swift */; };
+		730C60B22479EE8500261DF1 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730C60B12479EE8500261DF1 /* HomeView.swift */; };
+		730C60B42479F14D00261DF1 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730C60B32479F14D00261DF1 /* Environment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +64,8 @@
 		730C60AB24799F9400261DF1 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		730C60AD24799F9D00261DF1 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		730C60AF2479A07900261DF1 /* TabPageRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabPageRouter.swift; sourceTree = "<group>"; };
+		730C60B12479EE8500261DF1 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		730C60B32479F14D00261DF1 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +155,7 @@
 			children = (
 				730C605B24798BC800261DF1 /* AppDelegate.swift */,
 				730C608124798CEE00261DF1 /* AppRouter.swift */,
+				730C60B32479F14D00261DF1 /* Environment.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -210,6 +215,7 @@
 			children = (
 				730C60A724799F7F00261DF1 /* HomeRouter.swift */,
 				730C60AB24799F9400261DF1 /* HomeViewController.swift */,
+				730C60B12479EE8500261DF1 /* HomeView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -350,6 +356,7 @@
 				730C60882479941100261DF1 /* Router.swift in Sources */,
 				730C60B02479A07900261DF1 /* TabPageRouter.swift in Sources */,
 				730C60AA24799F8C00261DF1 /* SettingsRouter.swift in Sources */,
+				730C60B22479EE8500261DF1 /* HomeView.swift in Sources */,
 				730C606024798BC800261DF1 /* ViewController.swift in Sources */,
 				730C60AC24799F9400261DF1 /* HomeViewController.swift in Sources */,
 				730C608A2479942300261DF1 /* ShowableRouter.swift in Sources */,
@@ -357,6 +364,7 @@
 				730C608E2479946000261DF1 /* PresentableRouter.swift in Sources */,
 				730C60A824799F7F00261DF1 /* HomeRouter.swift in Sources */,
 				730C60A424799E9200261DF1 /* TabBarItem.swift in Sources */,
+				730C60B42479F14D00261DF1 /* Environment.swift in Sources */,
 				730C605C24798BC800261DF1 /* AppDelegate.swift in Sources */,
 				730C608C2479943900261DF1 /* PushableRouter.swift in Sources */,
 				730C608224798CEE00261DF1 /* AppRouter.swift in Sources */,

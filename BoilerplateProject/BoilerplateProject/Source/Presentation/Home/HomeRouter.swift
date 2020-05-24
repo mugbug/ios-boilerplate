@@ -21,6 +21,9 @@ final class HomeRouter: TabPageRouter {
     }
 
     func createViewController() -> UIViewController {
-        return HomeViewController()
+        guard #available(iOS 13.0, *), Current.useSwiftUI else {
+            return HomeViewController()
+        }
+        return HomeView.asViewController()
     }
 }
