@@ -10,3 +10,4 @@ TODO:
 - [ ] CI/CD
 - [x] Router protocols
 - [x] Dependency Injection (need improvements 😅)
+- [ ] TableViewFactory
