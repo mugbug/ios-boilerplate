@@ -26,7 +26,9 @@
 		730C60AE24799F9D00261DF1 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730C60AD24799F9D00261DF1 /* SettingsViewController.swift */; };
 		730C60B02479A07900261DF1 /* TabPageRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730C60AF2479A07900261DF1 /* TabPageRouter.swift */; };
 		730C60B22479EE8500261DF1 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730C60B12479EE8500261DF1 /* HomeView.swift */; };
-		730C60B42479F14D00261DF1 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730C60B32479F14D00261DF1 /* Environment.swift */; };
+		730C60B42479F14D00261DF1 /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730C60B32479F14D00261DF1 /* AppEnvironment.swift */; };
+		73467CF8247B423D002D1547 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73467CF7247B423D002D1547 /* main.swift */; };
+		73467CFB247B4294002D1547 /* TestsAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73467CFA247B4294002D1547 /* TestsAppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,7 +65,9 @@
 		730C60AD24799F9D00261DF1 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		730C60AF2479A07900261DF1 /* TabPageRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabPageRouter.swift; sourceTree = "<group>"; };
 		730C60B12479EE8500261DF1 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		730C60B32479F14D00261DF1 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		730C60B32479F14D00261DF1 /* AppEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnvironment.swift; sourceTree = "<group>"; };
+		73467CF7247B423D002D1547 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		73467CFA247B4294002D1547 /* TestsAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestsAppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +119,7 @@
 		730C607124798BCB00261DF1 /* BoilerplateProjectTests */ = {
 			isa = PBXGroup;
 			children = (
+				73467CF9247B427B002D1547 /* Application */,
 				730C607224798BCB00261DF1 /* BoilerplateProjectTests.swift */,
 				730C607424798BCB00261DF1 /* Info.plist */,
 			);
@@ -150,9 +155,10 @@
 		730C608024798CE300261DF1 /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				73467CF7247B423D002D1547 /* main.swift */,
 				730C605B24798BC800261DF1 /* AppDelegate.swift */,
 				730C608124798CEE00261DF1 /* AppRouter.swift */,
-				730C60B32479F14D00261DF1 /* Environment.swift */,
+				730C60B32479F14D00261DF1 /* AppEnvironment.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -224,6 +230,14 @@
 				730C60AD24799F9D00261DF1 /* SettingsViewController.swift */,
 			);
 			path = Settings;
+			sourceTree = "<group>";
+		};
+		73467CF9247B427B002D1547 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				73467CFA247B4294002D1547 /* TestsAppDelegate.swift */,
+			);
+			path = Application;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -350,6 +364,7 @@
 			files = (
 				730C60A224799CF600261DF1 /* TabBarRouter.swift in Sources */,
 				730C6090247994CA00261DF1 /* RootRouter.swift in Sources */,
+				73467CF8247B423D002D1547 /* main.swift in Sources */,
 				730C60882479941100261DF1 /* Router.swift in Sources */,
 				730C60B02479A07900261DF1 /* TabPageRouter.swift in Sources */,
 				730C60AA24799F8C00261DF1 /* SettingsRouter.swift in Sources */,
@@ -360,7 +375,7 @@
 				730C608E2479946000261DF1 /* PresentableRouter.swift in Sources */,
 				730C60A824799F7F00261DF1 /* HomeRouter.swift in Sources */,
 				730C60A424799E9200261DF1 /* TabBarItem.swift in Sources */,
-				730C60B42479F14D00261DF1 /* Environment.swift in Sources */,
+				730C60B42479F14D00261DF1 /* AppEnvironment.swift in Sources */,
 				730C605C24798BC800261DF1 /* AppDelegate.swift in Sources */,
 				730C608C2479943900261DF1 /* PushableRouter.swift in Sources */,
 				730C608224798CEE00261DF1 /* AppRouter.swift in Sources */,
@@ -372,6 +387,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73467CFB247B4294002D1547 /* TestsAppDelegate.swift in Sources */,
 				730C607324798BCB00261DF1 /* BoilerplateProjectTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

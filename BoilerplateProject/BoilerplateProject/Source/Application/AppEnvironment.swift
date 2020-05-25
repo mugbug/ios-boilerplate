@@ -1,5 +1,5 @@
 //
-//  Environment.swift
+//  AppEnvironment.swift
 //  BoilerplateProject
 //
 //  Created by Pedro M. Zaroni on 23/05/20.
@@ -7,14 +7,14 @@
 //
 
 // swiftlint:disable identifier_name
-var Current = Environment()
+var Current = AppEnvironment()
 
-struct Environment {
+struct AppEnvironment {
     var useSwiftUI = true
 }
 
-extension Environment {
-    static var mock = Environment(
+extension AppEnvironment {
+    static var mock = AppEnvironment(
         useSwiftUI: false
     )
 }
