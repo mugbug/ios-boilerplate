@@ -21,9 +21,18 @@ final class HomeRouter: TabPageRouter {
     }
 
     func createViewController() -> UIViewController {
-        guard #available(iOS 13.0, *), Current.useSwiftUI else {
-            return HomeViewController()
-        }
-        return HomeView.asViewController()
+        let interactor = HomeInteractor()
+        let presenter = HomePresenter(
+            router: self,
+            interactor: interactor
+        )
+        let view = HomeViewController(presenter: presenter)
+        presenter.view = view
+        interactor.presenter = presenter
+        return view
     }
+}
+
+extension HomeRouter: HomeRouterProtocol {
+
 }

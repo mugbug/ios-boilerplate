@@ -29,6 +29,8 @@
 		730C60B42479F14D00261DF1 /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730C60B32479F14D00261DF1 /* AppEnvironment.swift */; };
 		73467CF8247B423D002D1547 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73467CF7247B423D002D1547 /* main.swift */; };
 		73467CFB247B4294002D1547 /* TestsAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73467CFA247B4294002D1547 /* TestsAppDelegate.swift */; };
+		73467CFD247C61FF002D1547 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73467CFC247C61FF002D1547 /* HomePresenter.swift */; };
+		73467CFF247C620A002D1547 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73467CFE247C620A002D1547 /* HomeInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +70,8 @@
 		730C60B32479F14D00261DF1 /* AppEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnvironment.swift; sourceTree = "<group>"; };
 		73467CF7247B423D002D1547 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		73467CFA247B4294002D1547 /* TestsAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestsAppDelegate.swift; sourceTree = "<group>"; };
+		73467CFC247C61FF002D1547 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		73467CFE247C620A002D1547 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -219,6 +223,8 @@
 				730C60A724799F7F00261DF1 /* HomeRouter.swift */,
 				730C60AB24799F9400261DF1 /* HomeViewController.swift */,
 				730C60B12479EE8500261DF1 /* HomeView.swift */,
+				73467CFC247C61FF002D1547 /* HomePresenter.swift */,
+				73467CFE247C620A002D1547 /* HomeInteractor.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -365,6 +371,7 @@
 				730C60A224799CF600261DF1 /* TabBarRouter.swift in Sources */,
 				730C6090247994CA00261DF1 /* RootRouter.swift in Sources */,
 				73467CF8247B423D002D1547 /* main.swift in Sources */,
+				73467CFF247C620A002D1547 /* HomeInteractor.swift in Sources */,
 				730C60882479941100261DF1 /* Router.swift in Sources */,
 				730C60B02479A07900261DF1 /* TabPageRouter.swift in Sources */,
 				730C60AA24799F8C00261DF1 /* SettingsRouter.swift in Sources */,
@@ -376,6 +383,7 @@
 				730C60A824799F7F00261DF1 /* HomeRouter.swift in Sources */,
 				730C60A424799E9200261DF1 /* TabBarItem.swift in Sources */,
 				730C60B42479F14D00261DF1 /* AppEnvironment.swift in Sources */,
+				73467CFD247C61FF002D1547 /* HomePresenter.swift in Sources */,
 				730C605C24798BC800261DF1 /* AppDelegate.swift in Sources */,
 				730C608C2479943900261DF1 /* PushableRouter.swift in Sources */,
 				730C608224798CEE00261DF1 /* AppRouter.swift in Sources */,

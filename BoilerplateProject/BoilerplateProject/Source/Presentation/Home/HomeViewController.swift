@@ -10,7 +10,10 @@ import UIKit
 
 final class HomeViewController: UIViewController {
 
-    init() {
+    private let presenter: HomePresenterProtocol
+
+    init(presenter: HomePresenterProtocol) {
+        self.presenter = presenter
         super.init(nibName: nil, bundle: nil)
         view.backgroundColor = .green
         title = "Home"
@@ -20,3 +23,5 @@ final class HomeViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
 }
+
+extension HomeViewController: HomeViewDelegate {}
