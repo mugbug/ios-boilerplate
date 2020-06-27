@@ -19,7 +19,7 @@ platform :ios do
   desc "Run tests"
   lane :testing do
     scan(
-      workspace: "BoilerplateProject.xcodeproj",
+      workspace: "BoilerplateProject.xcworkspace",
       devices: ["iPhone 11"]
     )
   end
