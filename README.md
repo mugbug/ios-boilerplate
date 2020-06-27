@@ -2,6 +2,7 @@
 
 TODO:
 - [x] SwiftLint
+- [ ] Danger
 - [ ] Network layer (as framework)
 - [ ] Extensions (as framework)
 - [ ] OHTTPStubs
