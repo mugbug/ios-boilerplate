@@ -15,6 +15,6 @@ protocol PushableRouter: ShowableRouter {
 extension PushableRouter {
     func show(viewController: UIViewController, animated: Bool) {
         currentViewController = viewController
-        presentingViewController.pushViewController(viewController, animated: animated)
+        self.presentingViewController.pushViewController(viewController, animated: animated)
     }
 }
