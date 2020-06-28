@@ -6,7 +6,6 @@
 //  Copyright © 2020 mugbug. All rights reserved.
 //
 
-// swiftlint:disable identifier_name
 var Current = AppEnvironment()
 
 struct AppEnvironment {
