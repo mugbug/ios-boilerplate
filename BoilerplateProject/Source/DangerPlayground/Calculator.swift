@@ -7,7 +7,7 @@
 //
 
 struct Calculator {
-    static func sum(_ a: Int, with b: Int) -> Int {
-        return a + b
+    static func sum(_ first: Int, with second: Int) -> Int {
+        return first + second
     }
 }
