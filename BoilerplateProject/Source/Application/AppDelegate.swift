@@ -8,6 +8,7 @@
 
 import UIKit
 
+// swiftlint:disable all
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
@@ -21,7 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         #endif
 
 
-        
+        let a = UIWindow()
 
         window = UIWindow(frame: UIScreen.main.bounds)
         appRouter = AppRouter(window: window)
