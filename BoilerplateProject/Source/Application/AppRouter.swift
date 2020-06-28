@@ -13,8 +13,7 @@ final class AppRouter: Router {
     var presentingViewController: UINavigationController
     var currentViewController: UIViewController?
 
-    init(window: UIWindow?,
-         presentingViewController: UINavigationController = UINavigationController()) {
+    init(window: UIWindow?, presentingViewController: UINavigationController = UINavigationController()) {
         self.window = window
         self.presentingViewController = presentingViewController
     }
