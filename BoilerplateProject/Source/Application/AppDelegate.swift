@@ -8,14 +8,13 @@
 
 import UIKit
 
+// swiftlint:disable all
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     var appRouter: AppRouter?
 
-    func application(
-        _ application: UIApplication,
-        didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
     ) -> Bool {
 
         #if DEBUG
@@ -23,7 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         #endif
 
 
-        
+        let a = UIWindow()
 
         window = UIWindow(frame: UIScreen.main.bounds)
         appRouter = AppRouter(window: window)
