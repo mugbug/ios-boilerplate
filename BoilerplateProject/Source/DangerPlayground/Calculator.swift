@@ -10,4 +10,8 @@ struct Calculator {
     static func sum(_ first: Int, with second: Int) -> Int {
         return first + second
     }
+
+    static func multiply(_ a: Int, with b: Int) -> Int {
+        return a * b
+    }
 }
