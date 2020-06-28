@@ -20,7 +20,7 @@ platform :ios do
   lane :testing do
     scan(
       workspace: "BoilerplateProject.xcworkspace",
-      # devices: ["iPhone 11"]
+      devices: ["iPhone 11"]
     )
   end
 end
