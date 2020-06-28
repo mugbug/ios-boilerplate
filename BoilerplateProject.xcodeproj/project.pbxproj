@@ -31,6 +31,7 @@
 		73467CFB247B4294002D1547 /* TestsAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73467CFA247B4294002D1547 /* TestsAppDelegate.swift */; };
 		73467CFD247C61FF002D1547 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73467CFC247C61FF002D1547 /* HomePresenter.swift */; };
 		73467CFF247C620A002D1547 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73467CFE247C620A002D1547 /* HomeInteractor.swift */; };
+		736DE23124A8EA1F006A8A93 /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736DE23024A8EA1F006A8A93 /* Calculator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 		73467CFA247B4294002D1547 /* TestsAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestsAppDelegate.swift; sourceTree = "<group>"; };
 		73467CFC247C61FF002D1547 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		73467CFE247C620A002D1547 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		736DE23024A8EA1F006A8A93 /* Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +135,7 @@
 		730C607D24798C5D00261DF1 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				736DE22F24A8EA15006A8A93 /* DangerPlayground */,
 				730C60842479940100261DF1 /* Presentation */,
 				730C608024798CE300261DF1 /* Application */,
 			);
@@ -244,6 +247,14 @@
 				73467CFA247B4294002D1547 /* TestsAppDelegate.swift */,
 			);
 			path = Application;
+			sourceTree = "<group>";
+		};
+		736DE22F24A8EA15006A8A93 /* DangerPlayground */ = {
+			isa = PBXGroup;
+			children = (
+				736DE23024A8EA1F006A8A93 /* Calculator.swift */,
+			);
+			path = DangerPlayground;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -362,6 +373,7 @@
 				730C60A424799E9200261DF1 /* TabBarItem.swift in Sources */,
 				730C60B42479F14D00261DF1 /* AppEnvironment.swift in Sources */,
 				73467CFD247C61FF002D1547 /* HomePresenter.swift in Sources */,
+				736DE23124A8EA1F006A8A93 /* Calculator.swift in Sources */,
 				730C605C24798BC800261DF1 /* AppDelegate.swift in Sources */,
 				730C608C2479943900261DF1 /* PushableRouter.swift in Sources */,
 				730C608224798CEE00261DF1 /* AppRouter.swift in Sources */,

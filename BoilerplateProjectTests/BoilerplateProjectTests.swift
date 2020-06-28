@@ -12,9 +12,9 @@ import XCTest
 class BoilerplateProjectTests: XCTestCase {
 
     func testExample() {
-        let sum = 1 + 1
+        let sum = Calculator.sum(1, with: 2)
 
-        XCTAssertEqual(2, sum)
+        XCTAssertEqual(3, sum)
     }
 
 }
