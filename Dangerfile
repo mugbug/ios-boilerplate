@@ -11,8 +11,8 @@ warn("Big PR") if git.lines_of_code > 500
 can_merge = github.pr_json["mergeable"]
 warn("This PR cannot be merged yet.", sticky: false) unless can_merge
 
-has_source_changes = !git.modified_files.grep(/BitriseCocoaheads/).empty?
-has_tests_changes = !git.modified_files.grep(/BitriseCocoaheadsTests/).empty?
+has_source_changes = !git.modified_files.grep(/BoilerplateProject/).empty?
+has_tests_changes = !git.modified_files.grep(/BoilerplateProjectTests/).empty?
 
 
 if has_source_changes && !has_tests_changes
