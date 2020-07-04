@@ -1,4 +1,3 @@
-
 public protocol ViewCodeProtocol {
     func setupHierarchy()
     func setupConstraints()
