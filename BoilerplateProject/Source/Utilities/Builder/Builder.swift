@@ -26,34 +26,13 @@ func <- <Element, T>(_ attribute: WritableKeyPath<Element, T>,
     })
 }
 
-func .. <Element>(_ leftPredicate: Predicate<Element>,
-                  _ rightPredicate: Predicate<Element>) -> Predicate<Element> {
-    return Predicate(code: { value in
-        let value = leftPredicate.runCode(for: value)
-        return rightPredicate.runCode(for: value)
-    })
-}
-
 protocol Builder {}
 
 extension Builder {
     @discardableResult
-    static func .. <T>(_ lhs: Self,
-                      _ rhs: (keyPath: WritableKeyPath<Self, T>,
-                      newValue: T)) -> Self {
-        return lhs.set(rhs.keyPath, rhs.newValue)
-    }
-
-    @discardableResult
     static func .. (_ element: Self,
                     _ predicate: Predicate<Self>) -> Self {
         return element.with(predicate)
-    }
-
-    private func set<T>(_ keyPath: WritableKeyPath<Self, T>, _ newValue: T) -> Self {
-        var copy = self
-        copy[keyPath: keyPath] = newValue
-        return copy
     }
 
     private func with(_ predicate: Predicate<Self>) -> Self {
