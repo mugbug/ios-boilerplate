@@ -31,6 +31,8 @@
 		73467CFB247B4294002D1547 /* TestsAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73467CFA247B4294002D1547 /* TestsAppDelegate.swift */; };
 		73467CFD247C61FF002D1547 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73467CFC247C61FF002D1547 /* HomePresenter.swift */; };
 		73467CFF247C620A002D1547 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73467CFE247C620A002D1547 /* HomeInteractor.swift */; };
+		73630B7E24B0D17A0084E162 /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73630B7D24B0D17A0084E162 /* Builder.swift */; };
+		73630B8324B1023F0084E162 /* BuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73630B8224B1023F0084E162 /* BuilderTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +74,8 @@
 		73467CFA247B4294002D1547 /* TestsAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestsAppDelegate.swift; sourceTree = "<group>"; };
 		73467CFC247C61FF002D1547 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		73467CFE247C620A002D1547 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		73630B7D24B0D17A0084E162 /* Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Builder.swift; sourceTree = "<group>"; };
+		73630B8224B1023F0084E162 /* BuilderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuilderTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +127,7 @@
 		730C607124798BCB00261DF1 /* BoilerplateProjectTests */ = {
 			isa = PBXGroup;
 			children = (
+				73630B7F24B102070084E162 /* Utilities */,
 				73467CF9247B427B002D1547 /* Application */,
 				730C607224798BCB00261DF1 /* BoilerplateProjectTests.swift */,
 				730C607424798BCB00261DF1 /* Info.plist */,
@@ -133,6 +138,7 @@
 		730C607D24798C5D00261DF1 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				73630B8024B1021D0084E162 /* Utilities */,
 				730C60842479940100261DF1 /* Presentation */,
 				730C608024798CE300261DF1 /* Application */,
 			);
@@ -246,6 +252,30 @@
 			path = Application;
 			sourceTree = "<group>";
 		};
+		73630B7F24B102070084E162 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				73630B8224B1023F0084E162 /* BuilderTests.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		73630B8024B1021D0084E162 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				73630B8124B102210084E162 /* Builder */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		73630B8124B102210084E162 /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				73630B7D24B0D17A0084E162 /* Builder.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -348,6 +378,7 @@
 			files = (
 				730C60A224799CF600261DF1 /* TabBarRouter.swift in Sources */,
 				730C6090247994CA00261DF1 /* RootRouter.swift in Sources */,
+				73630B7E24B0D17A0084E162 /* Builder.swift in Sources */,
 				73467CF8247B423D002D1547 /* main.swift in Sources */,
 				73467CFF247C620A002D1547 /* HomeInteractor.swift in Sources */,
 				730C60882479941100261DF1 /* Router.swift in Sources */,
@@ -374,6 +405,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				73467CFB247B4294002D1547 /* TestsAppDelegate.swift in Sources */,
+				73630B8324B1023F0084E162 /* BuilderTests.swift in Sources */,
 				730C607324798BCB00261DF1 /* BoilerplateProjectTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
