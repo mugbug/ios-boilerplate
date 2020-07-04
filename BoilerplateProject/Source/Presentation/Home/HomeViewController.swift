@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import ViewCodeHelper
 
 extension UIView: Builder {}
 
@@ -30,16 +31,12 @@ final class HomeViewController: UIViewController {
     }
 }
 
-extension HomeViewController {
-    func buildView() {
-        label.translatesAutoresizingMaskIntoConstraints = false
-        view.addSubview(label)
-        NSLayoutConstraint.activate([
-            label.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            label.centerYAnchor.constraint(equalTo: view.centerYAnchor),
-        ])
-        additionalSetup()
+extension HomeViewController: ViewCodeProtocol {
+    func setupHierarchy() {
+        view.addSubviewToCenter(subview: label)
     }
+
+    func setupConstraints() { }
 
     func additionalSetup() {
         view..\.backgroundColor <- .green

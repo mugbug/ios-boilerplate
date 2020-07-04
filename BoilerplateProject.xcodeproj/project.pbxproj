@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -33,6 +33,7 @@
 		73467CFF247C620A002D1547 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73467CFE247C620A002D1547 /* HomeInteractor.swift */; };
 		73630B7E24B0D17A0084E162 /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73630B7D24B0D17A0084E162 /* Builder.swift */; };
 		73630B8324B1023F0084E162 /* BuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73630B8224B1023F0084E162 /* BuilderTests.swift */; };
+		73A3529724B1180000C148D9 /* ViewCodeHelper in Frameworks */ = {isa = PBXBuildFile; productRef = 73A3529624B1180000C148D9 /* ViewCodeHelper */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,7 @@
 		73467CFE247C620A002D1547 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
 		73630B7D24B0D17A0084E162 /* Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Builder.swift; sourceTree = "<group>"; };
 		73630B8224B1023F0084E162 /* BuilderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuilderTests.swift; sourceTree = "<group>"; };
+		73A3529424B1102800C148D9 /* ViewCodeHelper */ = {isa = PBXFileReference; lastKnownFileType = text; path = ViewCodeHelper; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73A3529724B1180000C148D9 /* ViewCodeHelper in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,9 +102,11 @@
 		730C604F24798BC800261DF1 = {
 			isa = PBXGroup;
 			children = (
+				73A3529424B1102800C148D9 /* ViewCodeHelper */,
 				730C605A24798BC800261DF1 /* BoilerplateProject */,
 				730C607124798BCB00261DF1 /* BoilerplateProjectTests */,
 				730C605924798BC800261DF1 /* Products */,
+				73A3529524B1180000C148D9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -276,6 +281,13 @@
 			path = Builder;
 			sourceTree = "<group>";
 		};
+		73A3529524B1180000C148D9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -292,6 +304,9 @@
 			dependencies = (
 			);
 			name = BoilerplateProject;
+			packageProductDependencies = (
+				73A3529624B1180000C148D9 /* ViewCodeHelper */,
+			);
 			productName = BoilerplateProject;
 			productReference = 730C605824798BC800261DF1 /* BoilerplateProject.app */;
 			productType = "com.apple.product-type.application";
@@ -657,6 +672,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		73A3529624B1180000C148D9 /* ViewCodeHelper */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ViewCodeHelper;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 730C605024798BC800261DF1 /* Project object */;
 }
