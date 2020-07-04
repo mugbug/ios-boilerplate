@@ -1,3 +1,3 @@
 # ViewCodeHelper
 
-A description of this package.
+A package with some simple -- but useful -- helpers for building UIKit views in code.

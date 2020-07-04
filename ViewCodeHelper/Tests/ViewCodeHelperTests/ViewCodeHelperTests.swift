@@ -6,7 +6,8 @@ final class ViewCodeHelperTests: XCTestCase {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct
         // results.
-        XCTAssertEqual(ViewCodeHelper().text, "Hello, World!")
+        let greeting = "Hello, World!"
+        XCTAssertEqual(greeting, "Hello, World!")
     }
 
     static var allTests = [
