@@ -2,7 +2,7 @@ import UIKit
 
 public extension UIView {
 
-    func addSubviewWithConstraints(subview: UIView, insets: UIEdgeInsets = .zero) {
+    func addSubviewWithConstraintsOnViewGuide(subview: UIView, insets: UIEdgeInsets = .zero) {
         let layoutGuide = safeAreaLayoutGuide
         self.addSubview(subview)
         subview.constraint { view in
@@ -19,7 +19,7 @@ public extension UIView {
         }
     }
 
-    func addSubviewWithConstraintsOnViewGuide(subview: UIView, insets: UIEdgeInsets = .zero) {
+    func addSubviewWithConstraints(subview: UIView, insets: UIEdgeInsets = .zero) {
         self.addSubview(subview)
         subview.constraint { view in
             [

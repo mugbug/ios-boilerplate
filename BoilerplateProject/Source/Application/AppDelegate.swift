@@ -20,9 +20,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Current = .mock
         #endif
 
-
-        let aae = UIWindow()
-
         window = UIWindow(frame: UIScreen.main.bounds)
         appRouter = AppRouter(window: window)
         appRouter?.start()

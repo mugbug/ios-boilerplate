@@ -15,10 +15,10 @@ final class HomeViewController: UIViewController {
 
     private let presenter: HomePresenterProtocol
 
-    private let label = UILabel()
-        .. \.text <- "Hello"
-        .. \.font <- .systemFont(ofSize: 40)
-        .. \.textColor <- .white
+    private lazy var listView = GenericListView<HorizontalListCell>(
+        scrollDirection: .vertical,
+        color: .black
+    )
 
     init(presenter: HomePresenterProtocol) {
         self.presenter = presenter
@@ -33,14 +33,16 @@ final class HomeViewController: UIViewController {
 
 extension HomeViewController: ViewCodeProtocol {
     func setupHierarchy() {
-        view.addSubviewToCenter(subview: label)
+        view.addSubviewWithConstraints(subview: listView)
     }
 
     func setupConstraints() { }
 
     func additionalSetup() {
-        view..\.backgroundColor <- .green
+        view.backgroundColor = .green
+        navigationController?.navigationBar.prefersLargeTitles = true
         title = "Home"
+        navigationController?.navigationItem.largeTitleDisplayMode = .always
     }
 }
 
